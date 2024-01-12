@@ -3,25 +3,158 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+
+.main-home {}
+
+h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 36px;
+  font-family: Verdana, sans-serif;
+  color: crimson;
+}
+
+p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 160%;
+  text-indent: 2em;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    text-indent: 1em;
+  }
+}
+
+
+/************************** L A N D I N G   P H O T O *********************************/
+
+.landing-photo {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1800px auto;
+  background-position: 0 -200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 40vh;
+  border-bottom: 1px solid crimson;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message-hey {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  color: darkred;
+}
+
+.welcome-message-name {
+  font-family: 'Alfa Slab One';
+  font-size: 64px;
+  color: crimson;
+}
+
+@media screen and (max-width: 650px) {
+  .welcome-message-hey {
+    font-size: 24px;
+  }
+
+  .welcome-message-name {
+    font-size: 32px;
+  }
+}
+
+/************************** A B O U T   M E *********************************/
+
+.about-me {
+  background-color: #ffffff;
+}
+
+.about-me-tiles {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-tile {
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.about-me-tile-photo {
+  margin-left: 100px;
+  min-width: 200px;
+  padding-top: 20px;
+}
+
+.about-me-tile-text {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 650px) {
+  .about-me-tiles {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .about-me-tile-photo, .about-me-tile-text {
+    margin: 50px;
+    padding: 0;
+  }
+}
+
+img.about-me-photo {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/************************** F I N D   M E *********************************/
+
+.find-me {
+  background-color: #333333;
+}
+
+.find-me-icons {
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 650px) {
+  .find-me-icons {
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    flex-direction: column;
+    align-content: space-around;
+  }
+}
+
+.social-network-icon {
+  margin-bottom: 50px;
+  transition: 0.4s;
+}
+
+.social-network-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
