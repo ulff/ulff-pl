@@ -11,9 +11,7 @@ import linkedinIcon from "../public/social-network/linkedin.svg";
 const iconSize = 128;
 
 export default function Home() {
-  return (
-    <main className="main-home">
-
+  return (<>
       <div className="landing-photo">
         <div className="welcome-message">
           <div className="welcome-message-hey">&mdash; Hey, I`m &mdash;</div>
@@ -100,6 +98,5 @@ export default function Home() {
             />
         </div>
       </div>
-    </main>
-  )
+  </>)
 }

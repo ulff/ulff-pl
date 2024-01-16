@@ -5,10 +5,24 @@
 :root {
 }
 
-body {
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
 
-.main-home {}
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
 
 h1 {
   padding: 30px;
@@ -41,16 +55,28 @@ p {
 /************************** L A N D I N G   P H O T O *********************************/
 
 .landing-photo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  padding-top: 40vh;
+}
+
+.landing-photo:after {
   background-image: url("../public/background.jpg");
   background-repeat: no-repeat;
-  background-size: 1800px auto;
-  background-position: 0 -200px;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  padding-top: 40vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
 }
 
 .welcome-message {
@@ -83,6 +109,9 @@ p {
 
 .about-me {
   background-color: #ffffff;
+  width: 100%;
+  perspective: 2px;
+  -webkit-perspective: 2px;
 }
 
 .about-me-tiles {
@@ -128,6 +157,9 @@ img.about-me-photo {
 
 .find-me {
   background-color: #333333;
+  width: 100%;
+  perspective: 2px;
+  -webkit-perspective: 2px;
 }
 
 .find-me-icons {
