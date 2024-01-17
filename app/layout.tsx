@@ -18,6 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:bolder' rel='stylesheet' />
       </head>
       <body className={inter.className}>
         {children}

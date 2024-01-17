@@ -22,14 +22,16 @@ body {
   -webkit-perspective: 1px;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  background-color: #333333;
 }
 
 h1 {
   padding: 30px;
   text-align: center;
   font-size: 36px;
-  font-family: Verdana, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: crimson;
+  font-weight: bold;
 }
 
 p {
@@ -54,7 +56,7 @@ p {
 
 /************************** L A N D I N G   P H O T O *********************************/
 
-.landing-photo {
+.cover {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -63,7 +65,7 @@ p {
   padding-top: 40vh;
 }
 
-.landing-photo:after {
+.cover:after {
   background-image: url("../public/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -107,7 +109,7 @@ p {
 
 /************************** A B O U T   M E *********************************/
 
-.about-me {
+.white {
   background-color: #ffffff;
   width: 100%;
   perspective: 2px;
@@ -155,7 +157,7 @@ img.about-me-photo {
 
 /************************** F I N D   M E *********************************/
 
-.find-me {
+.black {
   background-color: #333333;
   width: 100%;
   perspective: 2px;
@@ -164,7 +166,7 @@ img.about-me-photo {
 
 .find-me-icons {
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -173,7 +175,7 @@ img.about-me-photo {
 @media screen and (max-width: 700px) {
   .find-me-icons {
     padding-top: 5vh;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
     flex-direction: column;
     align-content: space-around;
   }
@@ -191,3 +193,61 @@ img.about-me-photo {
   cursor: pointer;
 }
 
+/************************** C O N T A C T *********************************/
+
+.footer {
+  padding-bottom: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+}
+
+.footer-contact {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contact-icon {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    justify-content: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .contact-info {
+    margin-right: 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.email {
+  color: crimson;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
