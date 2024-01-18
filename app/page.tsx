@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className="contact-info">
               <div className="bold">Olaf Gałązka</div>
-              <div className="email">
+              <div>
                 <a href="mailto:ulff.pl+web@gmail.com">
                   ulff.pl@gmail.com
                 </a>

@@ -10,7 +10,7 @@ import xIcon from "../../public/social-network/x.svg";
 
 type SocialNetwork = "github" | "linkedin" | "facebook" | "youtube" | "x";
 
-const socialNetworkLinks: { [key in SocialNetwork]: string } = {
+export const socialNetworkLinks: { [key in SocialNetwork]: string } = {
   github: "https://github.com/ulff",
   linkedin: "https://www.linkedin.com/in/olaf-ga%C5%82%C4%85zka-40301485/",
   facebook: "https://www.facebook.com/olaf.galazka",

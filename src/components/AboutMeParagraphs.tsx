@@ -1,24 +1,31 @@
 import React, {ReactElement} from "react";
+import {socialNetworkLinks} from "@/src/components/SocialNetworkLink";
 
 export const AboutMeParagraphs: React.FC = (): ReactElement => {
     return <>
         <p className="about-me-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hi, my name is Olaf Gałązka. I live in Gdańsk (Poland) and I am a software engineer. Welcome to my tiny
+            personal webpage. If you want to contact me, please use the social network links or contact details below.
         </p>
         <p className="about-me-text">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-            commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            I was born in 1984, in Elbląg. This is a city located about 60 killometers to the east from Gdańsk. I
+            moved to Gdańsk in my early childhood, and I live here till today. In 2009 I have graduated the Information
+            Technology at the University of Gdańsk. I started my first job as a programmer at the end of 2006. For over
+            10 years I have been working as a PHP developer, I was responsible for creating and managing various
+            backend services at several companies. In 2015 I
+            joined <a href="https://schibsted.pl/" target="_blank">Schibsted Tech Polska</a> where I still work today.
+        </p>
+        <p className="about-me-text">
+            Somewhere around 2017 or 2018 I started feeling bored with PHP and I decided to learn new programming
+            language. Since I always lacked knowledge about frontend development, my choice fell on JavaScript. I
+            started learning NodeJS and pretty quickly I switched the team in my company, to another one where I could
+            use Node professionally. I also had occassion there to learn React framework so I finally touched the base
+            with frontend. In September 2019 I joined my current team. On the daily basis I work with the technologies
+            like NodeJS, TypeScript, NextJS, Kubernetes, Docker, AWS, Postgres, SQL.
+        </p>
+        <p className="about-me-text">
+            This is a very brief version of my proffessional life. If you`re interested in more details, please visit
+            my <a href={socialNetworkLinks["linkedin"]} target="_blank">LinkedIn profile</a>.
         </p>
     </>
 }
