@@ -10,6 +10,7 @@ import xIcon from "../../public/social-network/x.svg";
 
 type SocialNetwork = "github" | "linkedin" | "facebook" | "youtube" | "x";
 
+// eslint-disable-next-line no-unused-vars
 export const socialNetworkLinks: { [key in SocialNetwork]: string } = {
   github: "https://github.com/ulff",
   linkedin: "https://www.linkedin.com/in/olaf-ga%C5%82%C4%85zka-40301485/",
@@ -18,6 +19,7 @@ export const socialNetworkLinks: { [key in SocialNetwork]: string } = {
   x: "https://twitter.com/olafgalazka",
 }
 
+// eslint-disable-next-line no-unused-vars
 const socialNetworkIcons: { [key in SocialNetwork]: any } = {
   github: githubIcon,
   linkedin: linkedinIcon,
