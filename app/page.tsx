@@ -45,7 +45,7 @@ export default function Home() {
         <div className="footer">
           <div className="footer-contact">
             <div className="contact-icon">
-              <Image priority src={contactIcon} alt="Contact info" height="70"/>
+              <Image priority src={contactIcon} alt="Contact info" height="45"/>
             </div>
             <div className="contact-info">
               <div className="bold">Olaf Gałązka</div>
@@ -54,7 +54,6 @@ export default function Home() {
                   ulff.pl@gmail.com
                 </a>
               </div>
-              <div>+48 609 846 434</div>
             </div>
           </div>
         </div>
